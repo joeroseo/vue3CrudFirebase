@@ -1,0 +1,23 @@
+If you're already using npm and a module bundler such as webpack or Rollup, you can run the following command to install the latest SDK (Learn more):
+
+npm install firebase
+Then, initialize Firebase and begin using the SDKs for the products you'd like to use.
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAOihzky1cAECHqvjT0XlPl9jYoj41jahU",
+  authDomain: "crud3firebase.firebaseapp.com",
+  projectId: "crud3firebase",
+  storageBucket: "crud3firebase.appspot.com",
+  messagingSenderId: "39348629620",
+  appId: "1:39348629620:web:6fb7ba622f9f559e6ee121"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+Note: This option uses the modular JavaScript SDK, which provides reduced SDK size.

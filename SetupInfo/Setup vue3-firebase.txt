@@ -1,0 +1,42 @@
+Setup Firebase database as described in 
+https://www.bezkoder.com/vue-3-firebase/#CRUD_Operations_using_firebase_Reference
+Save a file containing:
+
+  apiKey: "AIzaSyAOihzky1cAECHqvjT0XlPl9jYoj41jahU",
+  authDomain: "crud3firebase.firebaseapp.com",
+  projectId: "crud3firebase",
+  storageBucket: "crud3firebase.appspot.com",
+  messagingSenderId: "39348629620",
+  appId: "1:39348629620:web:6fb7ba622f9f559e6ee121"
+
+
+cd c:\users\joe\vue
+vue create vue-3-firebase (choose Default ([Vue 3] babel, eslint))
+
+Copy repository
+Source - https://github.com/bezkoder/vue-3-firebase
+Target - c:\users\joe\vue\git-temp
+
+cd C:\Users\Joe\Vue\vue-3-firebase
+
+Copy contents of c:\users\joe\vue\git-temp to C:\Users\Joe\Vue\vue-3-firebase
+
+npm install bootstrap@4.6.0 jquery popper.js
+
+npm install vue-router@4
+
+npm install firebase@8.10.0
+
+In vue.config.js change to
+module.exports = {
+  devServer: {
+    port: 3001,
+  },
+};
+
+In package.json change to
+  "scripts": {
+    "serve": "set NODE_OPTIONS=--openssl-legacy-provider &&  vue-cli-service serve",
+
+Delete node_modules and package-lock.json
+Then install with npm install --legacy-peer-deps.
